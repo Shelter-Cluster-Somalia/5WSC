@@ -556,8 +556,9 @@ d3.csv('data/dataset.csv', function (error, data) {
                 donorDim = ndx.dimension(function (d) { return d.Donor }),
                 partnerDim = ndx.dimension(function (d) { return d.IP }),
                 organDim = ndx.dimension(function (d) { return d.Organization }),
-                locationDim = ndx.dimension(function (d) { return d.Location });
-
+                locationDim = ndx.dimension(function (d) { return d.Location }),
+                regionDim = ndx.dimension(function (d) { return d.Region });
+            
             var locationGroup = locationDim.group().reduceSum(function(d){
                 d.Individuals;
             });
