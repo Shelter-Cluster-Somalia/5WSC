@@ -14,6 +14,7 @@ var
     organSelect = dc.selectMenu("#dc-organ-select"),
     donorSelect = dc.selectMenu("#dc-donor-select"),
     locationSelect = dc.selectMenu("#dc-location-select");
+    regionSelect = dc.selectMenu("#dc-region-select");
 
 var demoBarStack = dc.barChart("#dc-demo-bar-stack");
 var pcmPie = dc.pieChart("#dc-pcm-pie");
@@ -153,6 +154,7 @@ function getFiltersValues() {
         { name: 'sta', value: statusRow.filters() }, //16
         { name: 'yea', value: yearBar.filters() }, //17
         { name: 'cat', value: programCatRow.filters() }, //18
+        { name: 'selreg', value: regionionSelect.filters() }, //19
 
     ];
     // console.log(filters[23]);
@@ -255,6 +257,7 @@ function initFilters() {
         filter(statusRow, 16);
         filter(yearBar, 17);
         filter(programCatRow, 18);
+        filter(regionSelect, 19);
     } else {
         // assign default status
         statusRow.filter(statusFilter);
@@ -619,7 +622,23 @@ d3.csv('data/dataset.csv', function (error, data) {
                 })
                 ;
             locationSelect.render();
-
+            regionSelect
+                // .width(100)
+                // .height(100)
+                .dimension(regionDim)
+                .group(regionDim.group().reduceSum(function(d){
+                    return d.Individuals;
+                }))
+                .multiple(true)
+                // .numberVisible(14)
+                .controlsUseVisibility(true)
+                .on("filtered", getFiltersValues)
+                .title(function (d) {
+                    return d.key
+                    // return d.key.substring(0,(d.key.length - 17)) + " - " + numberFormat(d.value) + "";
+                })
+                ;
+            regionSelect.render();
 
             // demographic stacked bar chart
             var demoDim = ndx.dimension(function (d) {
