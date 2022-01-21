@@ -346,7 +346,7 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div id="dc-region-map">
                         <h6>
                             REGION MAP
@@ -360,7 +360,7 @@
                         </h6>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div id="dc-district-map">
                         <h6>
                             DISTRICT MAP
@@ -383,6 +383,20 @@
                                 title="Click on an item(s) in the list to select and filter by">
                             </a>
                             <a href="javascript:locationSelect.filterAll();dc.redrawAll()" class="reset"
+                                style="visibility: hidden">
+                                Clear
+                            </a>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div id="dc-region-select" style="float: right;">
+                        <h6>
+                            REGIONS
+                            <a href="#" class='far fa-question-circle' data-toggle="tooltip"
+                                title="Click on an item(s) in the list to select and filter by">
+                            </a>
+                            <a href="javascript:regionSelect.filterAll();dc.redrawAll()" class="reset"
                                 style="visibility: hidden">
                                 Clear
                             </a>
@@ -430,7 +444,7 @@
                 </div>
                 <div class="col-lg-3 fade">
                     <span style="float: right">
-                        <strong>Contact:</strong>&nbsp;
+                        <strong>Maintained by:</strong>&nbsp;
                         Padmore Okal, okal@unhcr.org
                     </span>
                 </div>
