@@ -257,6 +257,12 @@ footer {
     margin-top: 5px;
 
 }
+#dc-region-select .dc-select-menu[multiple]{
+    width: 160px;
+    height: 340px;
+    margin-top: 5px;
+
+}
 
 /* hide x axis for partner type row chart */
 #dc-ptype-row svg g g.axis { display: none; }
