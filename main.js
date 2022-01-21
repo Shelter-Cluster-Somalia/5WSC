@@ -13,7 +13,7 @@ var
     partnerSelect = dc.selectMenu("#dc-partner-select"),
     organSelect = dc.selectMenu("#dc-organ-select"),
     donorSelect = dc.selectMenu("#dc-donor-select"),
-    locationSelect = dc.selectMenu("#dc-location-select");
+    locationSelect = dc.selectMenu("#dc-location-select"),
     regionSelect = dc.selectMenu("#dc-region-select");
 
 var demoBarStack = dc.barChart("#dc-demo-bar-stack");
@@ -154,7 +154,7 @@ function getFiltersValues() {
         { name: 'sta', value: statusRow.filters() }, //16
         { name: 'yea', value: yearBar.filters() }, //17
         { name: 'cat', value: programCatRow.filters() }, //18
-        { name: 'selreg', value: regionionSelect.filters() }, //19
+        { name: 'selreg', value: regionSelect.filters() }, //19
 
     ];
     // console.log(filters[23]);
