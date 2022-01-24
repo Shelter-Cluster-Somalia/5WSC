@@ -14,7 +14,8 @@ var
     organSelect = dc.selectMenu("#dc-organ-select"),
     donorSelect = dc.selectMenu("#dc-donor-select"),
     locationSelect = dc.selectMenu("#dc-location-select"),
-    regionSelect = dc.selectMenu("#dc-region-select");
+    regionSelect = dc.selectMenu("#dc-region-select"),
+    districtSelect = dc.selectMenu("#dc-region-select");;
 
 var demoBarStack = dc.barChart("#dc-demo-bar-stack");
 var pcmPie = dc.pieChart("#dc-pcm-pie");
@@ -155,7 +156,7 @@ function getFiltersValues() {
         { name: 'yea', value: yearBar.filters() }, //17
         { name: 'cat', value: programCatRow.filters() }, //18
         { name: 'selreg', value: regionSelect.filters() }, //19
-
+        { name: 'seldis', value: districtSelect.filters() }, //20
     ];
     // console.log(filters[23]);
     var recursiveEncoded = $.param(filters);
@@ -258,6 +259,7 @@ function initFilters() {
         filter(yearBar, 17);
         filter(programCatRow, 18);
         filter(regionSelect, 19);
+        filter(districtSelect, 20);        
     } else {
         // assign default status
         statusRow.filter(statusFilter);
@@ -558,6 +560,7 @@ d3.csv('data/dataset.csv', function (error, data) {
                 organDim = ndx.dimension(function (d) { return d.Organization }),
                 locationDim = ndx.dimension(function (d) { return d.Location }),
                 regionDim = ndx.dimension(function (d) { return d.RegionMap });
+                districtDim = ndx.dimension(function (d) { return d.DistrictMap });
             
             var locationGroup = locationDim.group().reduceSum(function(d){
                 d.Individuals;
@@ -638,7 +641,21 @@ d3.csv('data/dataset.csv', function (error, data) {
                 })
                 ;
             regionSelect.render();
-
+            districtSelect
+                // .width(100)
+                // .height(100)
+                .dimension(regionDim)
+                .group(regionDim.group())
+                .multiple(true)
+                // .numberVisible(14)
+                .controlsUseVisibility(true)
+                .on("filtered", getFiltersValues)
+                .title(function (d) {
+                    return d.key
+                    // return d.key.substring(0,(d.key.length - 17)) + " - " + numberFormat(d.value) + "";
+                })
+                ;
+            districtSelect.render();
             // demographic stacked bar chart
             var demoDim = ndx.dimension(function (d) {
                 return "";
