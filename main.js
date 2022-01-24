@@ -557,7 +557,7 @@ d3.csv('data/dataset.csv', function (error, data) {
                 partnerDim = ndx.dimension(function (d) { return d.IP }),
                 organDim = ndx.dimension(function (d) { return d.Organization }),
                 locationDim = ndx.dimension(function (d) { return d.Location }),
-                regionDim = ndx.dimension(function (d) { return d.Region });
+                regionDim = ndx.dimension(function (d) { return d.RegionMap });
             
             var locationGroup = locationDim.group().reduceSum(function(d){
                 d.Individuals;
