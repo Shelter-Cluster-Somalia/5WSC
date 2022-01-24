@@ -259,11 +259,16 @@ footer {
 }
 #dc-region-select .dc-select-menu[multiple]{
     width: 160px;
-    height: 170px;
+    height: 157px;
     margin-top: 5px;
 
 }
+#dc-district-select .dc-select-menu[multiple]{
+    width: 160px;
+    height: 157px;
+    margin-top: 5px;
 
+}
 /* hide x axis for partner type row chart */
 #dc-ptype-row svg g g.axis { display: none; }
 
