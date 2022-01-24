@@ -15,7 +15,7 @@ var
     donorSelect = dc.selectMenu("#dc-donor-select"),
     locationSelect = dc.selectMenu("#dc-location-select"),
     regionSelect = dc.selectMenu("#dc-region-select"),
-    districtSelect = dc.selectMenu("#dc-region-select");;
+    districtSelect = dc.selectMenu("#dc-district-select");;
 
 var demoBarStack = dc.barChart("#dc-demo-bar-stack");
 var pcmPie = dc.pieChart("#dc-pcm-pie");
@@ -644,8 +644,8 @@ d3.csv('data/dataset.csv', function (error, data) {
             districtSelect
                 // .width(100)
                 // .height(100)
-                .dimension(regionDim)
-                .group(regionDim.group())
+                .dimension(districtDim)
+                .group(districtDim.group())
                 .multiple(true)
                 // .numberVisible(14)
                 .controlsUseVisibility(true)
