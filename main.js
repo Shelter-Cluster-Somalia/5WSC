@@ -15,7 +15,8 @@ var
     donorSelect = dc.selectMenu("#dc-donor-select"),
     locationSelect = dc.selectMenu("#dc-location-select"),
     regionSelect = dc.selectMenu("#dc-region-select"),
-    districtSelect = dc.selectMenu("#dc-district-select");;
+    districtSelect = dc.selectMenu("#dc-district-select"),
+    settlementSelect = dc.selectMenu("#dc-settlement-select");
 
 var demoBarStack = dc.barChart("#dc-demo-bar-stack");
 var pcmPie = dc.pieChart("#dc-pcm-pie");
@@ -157,6 +158,8 @@ function getFiltersValues() {
         { name: 'cat', value: programCatRow.filters() }, //18
         { name: 'selreg', value: regionSelect.filters() }, //19
         { name: 'seldis', value: districtSelect.filters() }, //20
+        { name: 'settl', value: settlementSelect.filters() }, //21
+        
     ];
     // console.log(filters[23]);
     var recursiveEncoded = $.param(filters);
@@ -168,7 +171,7 @@ function initFilters() {
     // regExp accepts special characters
     var parseHash, parsed;
 
-    parseHash = /^#loc=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&mod=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&par=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&mon=([\d{4}-\d{2}-\d{2},\d{4}-\d{2}-\d{2}]*)&crs=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&bnf=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&prg=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&pbn=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&don=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&reg=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&dis=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&org=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&rub=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&pcm=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&crf=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&sta=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&yea=([A-Za-z0-9,_\-\/\s]*)&cat=([A-Za-z0-9,_\-\/\s]*)&selreg=([A-Za-z0-9,_\-\/\s]*)&seldis=([A-Za-z0-9,_\-\/\s]*)$/;
+    parseHash = /^#loc=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&mod=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&par=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&mon=([\d{4}-\d{2}-\d{2},\d{4}-\d{2}-\d{2}]*)&crs=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&bnf=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&prg=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&pbn=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&don=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&reg=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&dis=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&org=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&rub=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&pcm=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&crf=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&sta=([A-Za-z0-9,!@#\$%\^\&*\)\(\/+=._-\s]*)&yea=([A-Za-z0-9,_\-\/\s]*)&cat=([A-Za-z0-9,_\-\/\s]*)&selreg=([A-Za-z0-9,_\-\/\s]*)&seldis=([A-Za-z0-9,_\-\/\s]*)&settl=([A-Za-z0-9,_\-\/\s]*)$/;
     parsed = parseHash.exec(decodeURIComponent(location.hash));
 
     function filter(chart, rank) {  // for instance chart = sector_chart and rank in URL hash = 1
@@ -259,7 +262,8 @@ function initFilters() {
         filter(yearBar, 17);
         filter(programCatRow, 18);
         filter(regionSelect, 19);
-        filter(districtSelect, 20);        
+        filter(districtSelect, 20); 
+        filter(settlementSelect, 21);        
     } else {
         // assign default status
         statusRow.filter(statusFilter);
@@ -559,8 +563,9 @@ d3.csv('data/dataset.csv', function (error, data) {
                 partnerDim = ndx.dimension(function (d) { return d.IP }),
                 organDim = ndx.dimension(function (d) { return d.Organization }),
                 locationDim = ndx.dimension(function (d) { return d.Location }),
-                regionDim = ndx.dimension(function (d) { return d.RegionMap });
-                districtDim = ndx.dimension(function (d) { return d.DistrictMap });
+                regionDim = ndx.dimension(function (d) { return d.RegionMap }),
+                districtDim = ndx.dimension(function (d) { return d.DistrictMap }),
+                settlementDim = ndx.dimension(function (d) { return d.Settlement });
             
             var locationGroup = locationDim.group().reduceSum(function(d){
                 d.Individuals;
@@ -656,6 +661,21 @@ d3.csv('data/dataset.csv', function (error, data) {
                 })
                 ;
             districtSelect.render();
+            settlementSelect
+                // .width(100)
+                // .height(100)
+                .dimension(settlementDim)
+                .group(settlementDim.group())
+                .multiple(true)
+                // .numberVisible(14)
+                .controlsUseVisibility(true)
+                .on("filtered", getFiltersValues)
+                .title(function (d) {
+                    return d.key
+                    // return d.key.substring(0,(d.key.length - 17)) + " - " + numberFormat(d.value) + "";
+                })
+                ;
+            settlementSelect.render();
             // demographic stacked bar chart
             var demoDim = ndx.dimension(function (d) {
                 return "";
