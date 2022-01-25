@@ -257,6 +257,12 @@ footer {
     margin-top: 5px;
 
 }
+#dc-settlement-select .dc-select-menu[multiple]{
+    width: 160px;
+    height: 340px;
+    margin-top: 5px;
+
+}
 #dc-region-select .dc-select-menu[multiple]{
     width: 160px;
     height: 157px;
