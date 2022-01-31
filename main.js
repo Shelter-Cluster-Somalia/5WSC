@@ -351,7 +351,7 @@ d3.csv('data/dataset.csv', function (error, data) {
                 d.EndMonth = dateParse(d.EndMonth);
                 d.Month = d3.timeMonth(d.EndMonth);
                 // latest year
-                if (yearFilter < +d.ReportYear) yearFilter = +d.ReportYear;
+                if (yearFilter < +d.ReportYear) yearFilter = +d.ReportYear-1;
                 // last updated date 
                 if (lastUpdated === undefined) lastUpdated = d.LastUpdated
                 lastUpdated = lastUpdated > d.LastUpdated ? lastUpdated : d.LastUpdated;
