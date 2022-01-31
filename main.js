@@ -96,7 +96,7 @@ var lastUpdated;
 
 var ndx; // crossfilter global variable 
 
-var statusFilter = "Ongoing"; 
+var statusFilter = "Completed"; 
 var yearFilter = 0; 
 var programCatFilter = "SHELTER"; 
 
