@@ -351,7 +351,7 @@ d3.csv('data/dataset.csv', function (error, data) {
                 d.EndMonth = dateParse(d.EndMonth);
                 d.Month = d3.timeMonth(d.EndMonth);
                 // latest year
-                if (yearFilter < +d.ReportYear) yearFilter = +d.ReportYear-1;
+                if (yearFilter < +d.ReportYear) yearFilter = +d.ReportYear;
                 // last updated date 
                 if (lastUpdated === undefined) lastUpdated = d.LastUpdated
                 lastUpdated = lastUpdated > d.LastUpdated ? lastUpdated : d.LastUpdated;
@@ -1008,7 +1008,7 @@ d3.csv('data/dataset.csv', function (error, data) {
 
             // configure displacement year dimension and group
             var yearDim = ndx.dimension(function (d) {
-                return d.ReportYear;
+                return d.ReportYear-1;
             });
             var yearGroup = yearDim.group()
                 .reduceSum(function (d) {
