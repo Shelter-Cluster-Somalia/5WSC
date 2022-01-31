@@ -1008,7 +1008,7 @@ d3.csv('data/dataset.csv', function (error, data) {
 
             // configure displacement year dimension and group
             var yearDim = ndx.dimension(function (d) {
-                return d.ReportYear-1;
+                return d.ReportYear;
             });
             var yearGroup = yearDim.group()
                 .reduceSum(function (d) {
