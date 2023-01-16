@@ -729,31 +729,7 @@ UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,NIDP,Urban,C
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,NIDP,Urban,Cash + In-Kind,Bay,Baidoa,Baidoa,"Sarman Jeel, Madaraan Degeen, Haruka Hirow, Awoodimow, Abal-5 , Koban dheere, Elbeti-1 , Balanbasha, Tufka, Hassan Mumin, Idaale -1, Tawakal Gurbaan, Galooshe, Iri-rog win, Sagam, Jawari, Gagal onle 2",31/08/2020,31/08/2020,2020,31/12/2022,2200000,1400000,No,Yes,2020,SHELTER,652,2988,391,484,444,1074,986
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,NIDP,Urban,Cash + In-Kind,Bay,Baidoa,Baidoa,"Sarman Jeel, Madaraan Degeen, Haruka Hirow, Awoodimow, Abal-5 , Koban dheere, Elbeti-1 , Balanbasha, Tufka, Hassan Mumin, Idaale -1, Tawakal Gurbaan, Galooshe, Iri-rog win, Sagam, Jawari, Gagal onle 2",31/08/2020,31/12/2020,2020,31/12/2022,2200000,1400000,No,Yes,2020,SHELTER,653,2988,391,484,444,1074,986
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,PIDP,Mixed,Cash,Hiraan,Belet Weyne,Belet Weyne,"Ex-Airport,Qatumo, Baarey, Kulan, Bulsho, Nasiib, Rajo, Cadaani, bula1, Shareco, Xamirogab, Shuubo, Kulmiye, Budul, Danyer, Xaliye and Qafale IDPs",31/07/2021,31/08/2021,2021,31/12/2022,3200000,2500000,Unk,Yes,2021,SHELTER,902,3000,500,450,448,1054,1048
-UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,PIDP,Urban,Cash,Hiraan,Belet Weyne,Belet Weyne,"Wadajir,Birmal,Gumar,Xaliye,Ayanle,Horsed,Curad,Wadajir Koshin,Wabi Shabele,Gumar & Gargar,Eyli Ali
-Nasri 2
-Fathukheyr
-Fathi 2
-Dayah
-Bulsho
-Tawakal 1
-Tawakal 2
-Ex-Airport
-Asal
-Magalo,Domey
-Barwaqo
-Midnimo
-Cadiley
-Tawakal Nuriyow,Kulmiye
-Shareco
-Bilan 2
-Farjano
-Alla Bari
-If&Akhiro
- 
-Kutimbo
-Shabelow
-Budul 
-Nasteho",30/09/2020,30/09/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,SHELTER,656,12000,1565,1801,1792,4214,4193
+UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,PIDP,Urban,Cash,Hiraan,Belet Weyne,Belet Weyne,"Wadajir,Birmal,Gumar,Xaliye,Ayanle,Horsed,Curad,Wadajir Koshin,Wabi Shabele,Gumar & Gargar,Eyli Ali,Nasri 2,Fathukheyr,Fathi 2,Dayah,Bulsho,Tawakal 1,Tawakal 2,Ex-Airport,Asal,Magalo,Domey,Barwaqo,Midnimo,Cadiley,Tawakal Nuriyow,Kulmiye,Shareco,Bilan 2,Farjano,Alla Bari,If&Akhiro,Kutimbo,Shabelow,Budul, Nasteho",30/09/2020,30/09/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,SHELTER,656,12000,1565,1801,1792,4214,4193
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Protracted,Completed,NIDP,Urban,Cash + In-Kind,Banadir,Banadir,Kaxda,N/A,30/09/2022,31/12/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,SHELTER,1550,6000,1000,1063,997,2033,1907
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Protracted,Completed,PIDP,Urban,Cash,Bay,Baidoa,Baidoa,N/A,31/10/2021,30/11/2021,2021,31/12/2022,3200000,2500000,No,Yes,2021,SHELTER,919,4248,708,688,632,1527,1401
 UNHCR,AVORD,EMERGENCY SHELTER,UNHCR donor - various,Eviction,Completed,EVIC,Urban,Cash,Banadir,Banadir,Kaxda,Zamzam,30/09/2021,31/10/2021,2021,31/12/2022,3200000,2500000,No,Yes,2021,SHELTER,905,4710,785,835,783,1596,1497
@@ -1051,17 +1027,7 @@ UNHCR,SWSCRI,EMERGENCY SHELTER,UNHCR donor - various,Protracted,Completed,HOST,M
 UNHCR,SWSCRI,EMERGENCY SHELTER,UNHCR donor - various,Protracted,Completed,PIDP,Mixed,Cash,Bay,Baidoa,Baidoa,N/A,31/12/2020,31/12/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,SHELTER,663,3046,398,493,453,1095,1005
 UNHCR,SWSCRI,EMERGENCY SHELTER,UNHCR donor - various,Protracted,Completed,RRET,Mixed,Cash,Bay,Baidoa,Baidoa,N/A,31/12/2020,31/12/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,SHELTER,662,2570,336,416,382,924,848
 UNHCR,SWSCRI,NFI KITS,UNHCR donor - various,Flood,Completed,NIDP,Mixed,In-Kind,Lower Shabelle,Wanla Weyn,Wanla Weyn,"Daud Buule,Aanoole, Awdiirow, Maynuun, Tendhada, 5ta Kulan, Xudur Weyne, Bakaal, Muuri, Malable, Cagaboorey",31/01/2020,31/08/2020,2020,31/12/2022,2200000,1400000,No,Yes,2020,NFI,654,3543,483,653,542,1284,1065
-UNHCR,SWSCRI,NFI KITS,UNHCR donor - various,Protracted,Completed,NIDP,Mixed,In-Kind,Bay,Diinsoor,Diinsoor,"Qotqot
-Korkaa Mari
-Buulo Omar 
-Kanaanax
-Tunida 
-Raaxole
-Tuger Hosle 
-Jilaalow
-Yaqshiid
-Saakow, 
-Rama dhawi",31/01/2020,31/08/2020,2020,31/12/2022,2200000,1400000,No,Yes,2020,NFI,655,3216,391,542,427,1256,990
+UNHCR,SWSCRI,NFI KITS,UNHCR donor - various,Protracted,Completed,NIDP,Mixed,In-Kind,Bay,Diinsoor,Diinsoor,"Qotqot,Korkaa Mari,Buulo Omar, Kanaanax,Tunida,Raaxole,Tuger,Hosle,Jilaalow,Yaqshiid,Saakow,Rama dhawi",31/01/2020,31/08/2020,2020,31/12/2022,2200000,1400000,No,Yes,2020,NFI,655,3216,391,542,427,1256,990
 UNHCR,JRIA,EMERGENCY SHELTER,UNHCR donor - various,Flood,Completed,NIDP,Mixed,In-Kind,Lower Juba,Afmadow,Afmadow,"Camp Buale, Camp Bilisa, Kaxda, Abaqbanbow, Hargeys, Camp Cameroon, Waberi, Fanole IDPs",31/08/2020,31/10/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,SHELTER,541,4980,687,895,803,1730,1553
 UNHCR,JRIA,NFI KITS,UNHCR donor - various,Flood,Completed,NIDP,Mixed,In-Kind,Lower Juba,Afmadow,Afmadow,"Camp Buale, Camp Bilisa, Kaxda, Abaqbanbow, Hargeys, Camp Cameroon, Waberi, Fanole IDPs",31/08/2020,31/10/2020,2020,31/12/2022,2200000,1400000,Unk,Unk,2020,NFI,542,6000,828,1078,968,2084,1871
 UNHCR,Mercy Corps,EMERGENCY SHELTER,UNHCR donor - various,Drought,Completed,NIDP,Rural,Cash + In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/01/2022,31/10/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,SHELTER,1467,3928,600,723,639,1362,1204
@@ -1074,7 +1040,7 @@ UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Completed,RRET,Urban,In-
 UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Completed,RRET,Urban,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/05/2021,31/05/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,NFI,1140,33,24,6,5,11,10
 UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Completed,RRET,Urban,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/01/2022,31/07/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,NFI,1292,40,16,7,7,14,12
 UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Completed,RRET,Urban,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,30/06/2022,30/06/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,NFI,1221,26,13,5,4,9,8
-UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Planned,NIDP,Urban,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/01/2022,31/01/2023,2023,01/01/2023,4900000,1400000,Unk,Unk,2023,NFI,1274,6,1,1,1,2,2
+UNHCR,Mercy Corps,NFI KITS,UNHCR donor - various,Return,Planned,RRET,Urban,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/01/2022,31/01/2023,2023,01/01/2023,4900000,1400000,Unk,Unk,2023,NFI,1274,6,1,1,1,2,2
 UNHCR,Mercy Corps,DURABLE SHELTER,UNHCR donor - various,Drought,Ongoing,NIDP,Rural,In-Kind,Lower Juba,Kismayo,Kismayo,N/A,31/01/2022,31/01/2023,2023,01/01/2023,4900000,1400000,Unk,Unk,2023,SHELTER,1471,328,88,60,53,114,101
 UNHCR,GECPD,NFI KITS,UNHCR donor - various,Drought,Completed,NIDP,Mixed,Cash,Mudug,Gaalkacyo,Gaalkacyo/Wadajir,N/A,31/01/2022,31/10/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,NFI,1484,6245,849,1236,1156,1991,1862
 UNHCR,GECPD,NFI KITS,UNHCR donor - various,Drought,Completed,NIDP,Mixed,Cash,Mudug,Jariiban,Jariiban,N/A,31/01/2022,31/10/2022,2022,31/12/2022,3600000,1200000,Unk,Unk,2022,NFI,1486,7839,1062,1592,1454,2505,2288
